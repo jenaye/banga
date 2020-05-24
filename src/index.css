@@ -1,12 +1,10 @@
 body {
   margin: 0;
-  overflow: hidden;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: red;
 }
 
 code {
@@ -21,7 +19,10 @@ code {
 
 
 .BackgroundYolo {
-  min-height: 100vh;
+  position: absolute;
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
   background: url(./pics/jenaye-fr-other-test.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -108,20 +109,6 @@ a:active {
 
   .container-home{
     margin-left: 40vw;
-  }
-  .MyLogo{
-    width: 20vw;
-  }
-}
-
-@media screen and (min-width: 1650px) and (max-width: 1799px)
-{
-  .barre{
-    left: -42vw;
-  }
-
-  .container-home{
-    margin-left: 44vw;
   }
   .MyLogo{
     width: 20vw;

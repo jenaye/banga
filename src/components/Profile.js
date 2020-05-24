@@ -1,41 +1,56 @@
 import React from 'react'
 import {Jumbotron, Card , ListGroup, Alert} from 'react-bootstrap'
 
-class Profile extends React.Component {
-    render() {
-      return <div class="container">
-<h1 className="text-white logo-text">{this.props.name}</h1><br/>
-<Jumbotron>
-  <h1>Houziaux Mike</h1>
+const links = [
+  {
+    class: 'text-dark',
+    link: 'https://www.root-me.org/jenaye?lang=fr',
+    name: 'Root-me',
+  },
+  {
+    class: 'text-danger',
+    link: 'https://www.root-me.org/jenaye?lang=fr',
+    name: 'Hackthebox',
+  },
+  {
+    link: 'https://www.root-me.org/jenaye?lang=fr',
+    name: 'Twitter',
+  },
+  {
+    link: 'https://www.root-me.org/jenaye?lang=fr',
+    name: 'Github',
+  },
+];
 
-  I'm an IT engineer and I'm working as a pentester for Orange Cyberdefense.<br/>
+export const Profile = () => (
+  <Jumbotron>
+    <h1>Houziaux Mike</h1>
 
-I am a contributor to the <a href="http://rtfm.re/">RTFM</a> association, especially to the challenges creations part of the <a href="https://twitter.com/sigsegv_event">Sigvsegv event</a>.<br/>
+    I'm an IT engineer and I'm working as a pentester for Orange Cyberdefense.<br/>
 
-I also contribute to several open source projects, such as this <a href="https://inventory.rawsec.ml/tools.html">inventory</a> of cybersecurity oriented tools.<br/>
+    I am a contributor to the <a href="http://rtfm.re/">RTFM</a> association, especially to the challenges creations part of the <a href="https://twitter.com/sigsegv_event">Sigvsegv event</a>.<br/>
 
-I am also a member of the CTF team <a href="https://inshallhack.org/">Inshallhack</a><br/>
+    I also contribute to several open source projects, such as this <a href="https://inventory.rawsec.ml/tools.html">inventory</a> of cybersecurity oriented tools.<br/>
 
-<br/>
-<Card style={{ width: '18rem' }}>
-  <Card.Header>Links</Card.Header>
-  <ListGroup variant="flush">
-    <ListGroup.Item><a href="https://www.root-me.org/jenaye?lang=fr">Root-me</a></ListGroup.Item>
-    <ListGroup.Item><a href="https://www.hackthebox.eu/profile/12858">Hackthebox</a></ListGroup.Item>
-    <ListGroup.Item><a href="https://twitter.com/Jenaye_fr">Twitter</a></ListGroup.Item>
-    <ListGroup.Item><a href="https://github.com/jenaye">Github</a></ListGroup.Item>
-  </ListGroup>
-</Card>
+    I am also a member of the CTF team <a href="https://inshallhack.org/">Inshallhack</a><br/>
 
-<br/>
-<Alert variant="dark">
-    Contact by email  jenaye[@]protonmail.com
-  </Alert>
-</Jumbotron>
+    <br/>
+    <Card className='col-12 col-sm-10 col-md-6 p-0'>
+      <Card.Header>Links</Card.Header>
+      <ListGroup variant="flush">
+        {
+          links.map((item, key) => (
+            <ListGroup.Item key={key}>
+              <a href={ item.link } className={item.class || ''}>{ item.name }</a>
+            </ListGroup.Item>
+          ))
+        }
+      </ListGroup>
+    </Card>
 
-
-      </div>;
-    }
-  }
-
-export default Profile;
+    <br/>
+    <Alert variant="dark">
+      Contact by email  jenaye[@]protonmail.com
+    </Alert>
+  </Jumbotron>
+);

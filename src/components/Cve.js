@@ -1,26 +1,39 @@
-import React from 'react'
-import {Card} from 'react-bootstrap'
-class Cve extends React.Component {
-    render() {
-      return <div class="container">
-        <h1 className="text-white logo-text">{this.props.name}</h1><br/>
+import React from 'react';
+import {Card} from 'react-bootstrap';
+import { getCves } from '../data/CveType';
 
-<Card>
-  <Card.Header>Openupload - CVE-2020-11712</Card.Header>
-  <Card.Body>
-    <blockquote className="blockquote mb-0">
-      <p> Through 0.4.3 allows XSS via index.php?action=u and the filename field.
-        POC :  <a href="https://github.com/jenaye/cve/blob/master/readme.MD">here</a>
-      </p>
-      <b>Score : Medium (6.1) </b><br/><p>Date : 04/12/2020</p>
-      <footer className="blockquote-footer">
-        Category : <cite title="Source Title">XSS </cite>
-      </footer>
-    </blockquote>
-  </Card.Body>
-</Card>
-      </div>;
-    }
+const getDanger = score => {
+  if (score < 4) {
+    return 'Low';
+  } else if (score < 7) {
+    return 'Medium';
+  } else {
+    return 'High';
   }
+};
 
-export default Cve;
+export const Cve = () => (
+  <>
+    {
+      getCves().map((cveItem, key) => (
+        <div className='py-3'>
+          <Card key={key}>
+            <Card.Header>Openupload - CVE-{cveItem.number}</Card.Header>
+            <Card.Body>
+              <blockquote className="blockquote mb-0">
+                <div dangerouslySetInnerHTML={{__html: cveItem.description}}/>
+                <b className='d-block'>
+                  Score : { getDanger(cveItem.score) } ({ cveItem.score })
+                </b>
+                <p>Date : { new Date(cveItem.date).toLocaleDateString() }</p>
+                <footer className="blockquote-footer">
+                  Category : <cite title="Source Title">{ cveItem.category }</cite>
+                </footer>
+              </blockquote>
+            </Card.Body>
+          </Card>
+        </div>
+      ))
+    }
+  </>
+);
