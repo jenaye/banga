@@ -3,7 +3,6 @@ import { Home } from './components/Home';
 import { Profile } from './components/Profile';
 import { Challenge } from './components/Challenges';
 
-
 export const routes = [
   {
     label: 'Home',
