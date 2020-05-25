@@ -23,6 +23,8 @@ const links = [
 ];
 
 export const Profile = () => (
+<>
+  <h1 className="text-white logo-text">Profile</h1>
   <Jumbotron>
     <h1>Houziaux Mike</h1>
 
@@ -53,4 +55,5 @@ export const Profile = () => (
       Contact by email  jenaye[@]protonmail.com
     </Alert>
   </Jumbotron>
+  </>
 );

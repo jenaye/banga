@@ -14,6 +14,7 @@ const getDanger = score => {
 
 export const Cve = () => (
   <>
+   <h1 className="text-white logo-text">CVE</h1>
     {
       getCves().map((cveItem, key) => (
         <div className='py-3'>

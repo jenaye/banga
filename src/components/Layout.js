@@ -1,5 +1,4 @@
 import React from 'react';
-import { BootstrapNavbar } from '../BootstrapNavbar';
 import { Nav, Navbar } from 'react-bootstrap';
 import logo from '../pics/toutpetit.png';
 import { routes } from '../routes';

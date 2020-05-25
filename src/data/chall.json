@@ -1,0 +1,40 @@
+[
+    {
+      "name": "Goland",
+      "eventName": "Root-me",
+      "description": "<span>You must find the hardcover password in a binary encoded in Go language.</span>",
+      "category": "Reverse"
+    },
+    {
+        "name": "What The FIC",
+        "eventName": "FIC 2020",
+        "description": "<span>Most people think that using an API with a JWT is enough to protect a site, here's a writeup proving to them that you have to be careful.</span>",
+        "category": "Web"
+      },
+      {
+        "name": "Blockchain ETH",
+        "eventName": "LEHACK 2019",
+        "description": "<span>I created an etherum blockchain. 2 vulnerabilities were present on this challenge, the first one was simply looking at the data inside the transactions, the second one was more complex and was attacking the validation of a smart-contract to get money.</span>",
+        "category": "Forensic"
+      },
+      {
+        "name": "JE RIM ET JE RAM",
+        "eventName": "LEHACK 2019",
+        "description": "<span>This challenge was created in Windows, I provided to the attacker with a memory dump. The flag was cut in 2 parts, you will find the solution here.</span>",
+        "category": "Forensic"
+      },
+      {
+        "name": "A history of bits",
+        "eventName": "Sigsegv1",
+        "description": "<span>I wrote a script in python using the openCV library to hide a flag in an image.</span>",
+        "category": "Forensic"
+      },
+      {
+        "name": "Wired Sound",
+        "eventName": "Sigsegv1",
+        "description": "<span>I hid some text data in an audio file, to validate the challenge you had to though about using Audacity software and apply the spectrogram filter on the sound, then unzoom to see the password appears.</span>",
+        "category": "Steganography"
+      }
+    
+    
+  ]
