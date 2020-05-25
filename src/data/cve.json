@@ -2,7 +2,7 @@
   {
     "number": "2020-11712",
     "title": "Openupload",
-    "description": "<p>Through 0.4.3 allows XSS via index.php?action=u and the filename field. POC :  <a href='https://github.com/jenaye/cve/blob/master/readme.MD'>here</a></p>",
+    "description": "<p>Through 0.4.3 allows XSS via index.php?action=u and the filename field. POC :  <a target='_blank' rel='noreferrer' href='https://github.com/jenaye/cve/blob/master/readme.MD'>here</a></p>",
     "score": "6.1",
     "date": "2020-12-04",
     "category": "XSS"

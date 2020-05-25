@@ -16,8 +16,12 @@ export const Layout = ({ children }) => (
               <span className='my-auto text-white d-none d-lg-inline-flex'>
                 { routes[key + 1] ? ' | ' : '' }
               </span>
+              
             </>
           )) }
+          <span className='my-auto logo-text text-white d-none d-lg-inline-flex'> 
+                 <a target='_blank' rel='noreferrer' href='/cv.pdf'> | CV</a>
+              </span>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

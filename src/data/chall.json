@@ -2,13 +2,13 @@
     {
       "name": "Goland",
       "eventName": "Root-me",
-      "description": "<span>You must find the hardcover password in a binary encoded in Go language. check it out <a href='https://www.root-me.org/fr/Challenges/Cracking/ELF-x64-Golang-basique'>here</a></span>",
+      "description": "<span>You must find the hardcover password in a binary encoded in Go language. check it out <a target='_blank' rel='noreferrer' href='https://www.root-me.org/fr/Challenges/Cracking/ELF-x64-Golang-basique'>here</a></span>",
       "category": "Reverse"
     },
     {
       "name": "What The FIC",
       "eventName": "FIC 2020",
-      "description": "<span>Most people think that using an API with a JWT is enough to protect a site, here's a writeup proving to them that you have to be careful. Writeup : <a href='https://github.com/Orange-Cyberdefense/ctf-write-ups/blob/master/2020/FIC/what-the-fic/README.md'>here</a></span>",
+      "description": "<span>Most people think that using an API with a JWT is enough to protect a site, here's a writeup proving to them that you have to be careful. Writeup : <a target='_blank' rel='noreferrer' href='https://github.com/Orange-Cyberdefense/ctf-write-ups/blob/master/2020/FIC/what-the-fic/README.md'>here</a></span>",
       "category": "Web"
       },
       {
@@ -20,7 +20,7 @@
       {
       "name": "JE RIM ET JE RAM",
       "eventName": "LEHACK 2019",
-      "description": "<span>This challenge was created in Windows, I provided to the attacker with a memory dump. The flag was cut in 2 parts, you will find the solution <a href='https://0x90r00t.com/fr/2019/12/06/sigsegv2-finals-forensics-500-je-rim-et-je-ram-write-up/'>here</a>.</span>",
+      "description": "<span>This challenge was created in Windows, I provided to the attacker with a memory dump. The flag was cut in 2 parts, you will find the solution <a target='_blank' rel='noreferrer' href='https://0x90r00t.com/fr/2019/12/06/sigsegv2-finals-forensics-500-je-rim-et-je-ram-write-up/'>here</a>.</span>",
       "category": "Forensic"
       },
       {
