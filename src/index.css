@@ -40,6 +40,10 @@ code {
   z-index: 1;
 } 
 
+.cv {
+  color:red !important;
+}
+
 .logo-text {
   text-align: center;
   font-family: 'Orbitron', sans-serif;

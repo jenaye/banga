@@ -19,8 +19,8 @@ export const Layout = ({ children }) => (
               
             </>
           )) }
-          <span className='my-auto logo-text text-white d-none d-lg-inline-flex'> 
-                 <a target='_blank' rel='noreferrer' href='/cv.pdf'> | CV</a>
+          <span className='my-auto logo-text cv'> 
+                 <a target='_blank' rel='noreferrer' className='cv' href='/cv.pdf'>- CV -</a>
               </span>
         </Nav>
       </Navbar.Collapse>

@@ -23,5 +23,5 @@ export const routes = [
     label: 'CVE',
     path: '/cve',
     component: Cve,
-  },
+  }
 ];
